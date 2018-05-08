@@ -1,0 +1,95 @@
+@import "../common/css/common.less";
+.rules-wrap {
+  // 流程
+  .procedure {
+    position: relative;
+    top:0;
+    left:0;
+    background:rgba(53,203,219,1);
+    .pro-num {
+      .display();
+      padding: .09rem .3rem .08rem .21rem;
+      .num {
+        width:.4rem;
+        height:.4rem; 
+        background:rgba(255,255,255,1);
+        border-radius: 100%;
+        font-size: .26rem;
+        color:rgba(53,203,219,1);
+        line-height:.4rem;
+        text-align: center;
+      }
+      .line {
+        margin-left: -.16rem ;
+        margin-right: -.16rem ;
+        width:1.5rem;
+        height:.02rem; 
+        background:rgba(255,255,255,1);
+        opacity:1; 
+      }  
+    }
+    .pro-words {
+      .display();
+      padding: .09rem .3rem .08rem .21rem;
+      .words {
+        font-size:.2rem;
+        color:rgba(255,255,255,1);
+        line-height:.28rem;
+      }
+
+    }
+  }
+  // 规则
+  .rules {
+    padding: .4rem .3rem 0;
+    background: url(../img/secret.png) no-repeat  center center;
+    .rulesWords {
+      .title {
+        font-size:.3rem;
+        color:rgba(34,34,34,1);
+        line-height:.42rem;
+      }
+      .detail-wrap {
+        margin-top: .2rem;
+        
+        .detail {
+          margin-top: .31rem;
+          font-size: .28rem;
+          color:rgba(102,102,102,1);
+          line-height:.28rem;
+          background: url(../img/star.png) no-repeat   left center;
+          background-size:.19rem .19rem;
+          
+          span {
+            color:rgba(255,94,0,1);
+          }
+        }
+      }  
+    }
+    .startText {
+      .botton {
+        margin-top: 7.75rem;
+        width:6.9rem;
+        height:.9rem; 
+        background:rgba(53,203,219,1);
+        border-radius: 8px ; 
+        font-size:.36rem;
+        color:rgba(255,255,255,1);
+        line-height:.9rem;
+        text-align: center;
+      }
+      .prompt {
+        margin-top: .33rem;
+        font-size:.26rem;
+        color:rgba(102,102,102,1);
+        line-height:.37rem;
+        text-align: center;
+        span {
+          color:rgba(255,94,0,1);
+        }
+      }
+
+    }
+  }
+
+}

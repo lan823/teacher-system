@@ -1,0 +1,193 @@
+/**
+ * 弹窗
+ * @param {*}
+ */
+.WrittenTestWrapper .countDownWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 1.6rem;
+}
+.WrittenTestWrapper .countDownWrapper .countDown {
+  height: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0  1.6rem 0 1.11rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.WrittenTestWrapper .countDownWrapper .countDown .counter .timer {
+  overflow: hidden;
+  color: #fff;
+  font-size: .34rem;
+}
+.WrittenTestWrapper .countDownWrapper .countDown .counter .timer p {
+  float: left;
+  padding-top: .03rem;
+}
+.WrittenTestWrapper .countDownWrapper .countDown .counter .timer span {
+  float: left;
+  margin-left: .22rem;
+  font-size: .4rem;
+  color: #ff5e00;
+}
+.WrittenTestWrapper .countDownWrapper .countDown .submit {
+  width: 1rem;
+  height: .5rem;
+  background: #ffffff;
+  border-radius: .08rem ;
+  line-height: .5rem;
+  text-align: center;
+  color: #35cbdb;
+  font-size: .28rem;
+}
+.WrittenTestWrapper .countDownWrapper .counterTip {
+  padding: .14rem .65rem .14rem 1.72rem;
+  overflow: hidden;
+  background: #ffefef;
+  display: none;
+  font-size: .24rem;
+  color: #fe3439;
+}
+.WrittenTestWrapper .countDownWrapper .counterTip .surplus {
+  float: left;
+}
+.WrittenTestWrapper .countDownWrapper .counterTip .cancel {
+  float: left;
+  margin-left: .4rem;
+  color: #aaaaaa;
+  font-size: .16rem;
+}
+.WrittenTestWrapper .test-wrapper {
+  position: relative;
+  padding: 1.8rem .3rem 0;
+}
+.WrittenTestWrapper .test-wrapper .topic-container h2 {
+  font-size: .28rem;
+  color: #222222;
+  line-height: .28rem;
+  text-align: left;
+}
+.WrittenTestWrapper .test-wrapper .topic-container ol li {
+  position: relative;
+  margin-top: .3rem;
+  margin-bottom: .6rem;
+  margin-left: .45rem;
+  font-size: .26rem;
+  line-height: .4rem;
+  color: #666;
+}
+.WrittenTestWrapper .test-wrapper .topic-container ol li input[type='radio'] {
+  position: absolute;
+  left: -0.45rem;
+  top: 0;
+  width: .3rem;
+  height: .3rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 1rem;
+}
+.WrittenTestWrapper .modalAdvance {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 5.2rem 0;
+}
+.WrittenTestWrapper .modalAdvance .advance {
+  width: 5.4rem;
+  margin: 0 auto;
+  border-radius: .24rem;
+  background: #ffffff;
+}
+.WrittenTestWrapper .modalAdvance .advance .modalTop {
+  padding: 0.5rem 1.24rem 0.3rem;
+  border-bottom: 1px solid #ececec;
+  font-size: .32rem;
+  color: #666666;
+  line-height: .5rem;
+  text-align: center;
+}
+.WrittenTestWrapper .modalAdvance .advance .modalBottom {
+  padding: .32rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .36rem;
+  color: #35cbdb;
+}
+.WrittenTestWrapper .modalBack {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 5.2rem 0;
+}
+.WrittenTestWrapper .modalBack .advance {
+  width: 5.4rem;
+  margin: 0 auto;
+  border-radius: .24rem;
+  background: #ffffff;
+}
+.WrittenTestWrapper .modalBack .advance .modalTop {
+  padding: 0.5rem 0.27rem 0.3rem;
+  border-bottom: 1px solid #ececec;
+  font-size: .32rem;
+  color: #666666;
+  line-height: .5rem;
+  text-align: center;
+}
+.WrittenTestWrapper .modalBack .advance .modalBottom {
+  padding: .32rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .36rem;
+  color: #35cbdb;
+}
+.WrittenTestWrapper .modalAuto {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 5.2rem 0;
+}
+.WrittenTestWrapper .modalAuto .advance {
+  width: 5.4rem;
+  margin: 0 auto;
+  border-radius: .24rem;
+  background: #ffffff;
+}
+.WrittenTestWrapper .modalAuto .advance .modalTop {
+  padding: 0.5rem 0.28rem 0.6rem;
+  border-bottom: 1px solid #ececec;
+  font-size: .32rem;
+  color: #666666;
+  line-height: .5rem;
+  text-align: center;
+}
+.WrittenTestWrapper .modalAuto .advance .modalBottom {
+  padding: .32rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .36rem;
+  color: #35cbdb;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>在线笔试</title>
+  <script src="./common/js/jquery.js"></script>
+  <script src="./common/js/rem.js"></script>
+  <script src="./js/WrittenTest.js"></script>
+  <link rel="stylesheet" href="./common/css/reset.css">
+  <link rel="stylesheet" href="./css/WrittenTest.css">
+  <script src="./common/js/common.js"></script>
+</head>
+
+<body>
+  <div class="WrittenTestWrapper">
+    <!-- 倒计时 -->
+    <div class="countDownWrapper">
+      <div class="countDown">
+        <div class="counter">
+          <div class="timer">
+            <p>倒计时</p>
+            <span></span>
+          </div>
+        </div>
+        <div class="submit">交卷</div>
+      </div>
+      <div class="counterTip">
+        <div class="surplus">
+          考试时间剩余
+          <span>5</span> 分钟，请注意安排时间
+        </div>
+        <div class="cancel">
+          <span>5</span>消失
+        </div>
+      </div>
+    </div>
+    <!-- 考试题库 -->
+    <div class="test-wrapper"></div>
+    <!-- 弹窗 -->
+    <div class="modalAdvance">
+      <!-- 提前交卷 -->
+      <div class="advance">
+        <div class="modalTop">
+          测试时间还没结束,确定提前交卷
+        </div>
+        <ul class="modalBottom">
+          <li class='cancel'>取消</li>
+          <li class='confirm'>确认</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modalBack">
+      <!-- 退出考试系统 -->
+      <div class="advance">
+        <div class="modalTop">
+          退出考试后，系统将自动帮您交卷 并给出测试结果
+        </div>
+        <ul class="modalBottom">
+          <li class='cancel'>取消</li>
+          <li class='confirm'>确认</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modalAuto">
+      <!-- 自动交卷 -->
+      <div class="advance">
+        <div class="modalTop">
+          退出考试后，系统将自动帮您交卷 并给出测试结果
+        </div>
+        <ul class="modalBottom">
+          查看测试结果
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

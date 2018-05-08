@@ -1,0 +1,102 @@
+@import "../common/css/common.less";
+.WrittenTestWrapper {
+  .countDownWrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 1.6rem;
+    .countDown {
+      height: 1rem; 
+      background:rgba(0,0,0,0.8);
+      padding: 0  1.6rem 0 1.11rem;
+      .display();
+      .counter {
+        .timer {
+          overflow: hidden;
+          color: #fff;
+          font-size: .34rem;
+          p {
+            float: left;
+            padding-top: .03rem;
+          }
+          span {
+            float: left;
+            margin-left: .22rem;
+            font-size: .4rem;
+            color:rgba(255,94,0,1);
+          }
+        }
+      }
+      .submit {
+        width: 1rem;
+        height: .5rem; 
+        background:rgba(255,255,255,1);
+        border-radius: .08rem ;
+        line-height: .5rem;
+        text-align: center;
+        color:rgba(53,203,219,1);
+        font-size: .28rem;
+      }
+    }
+    .counterTip {
+      padding: .14rem .65rem .14rem 1.72rem;
+      overflow: hidden;
+      background:rgba(255,239,239,1);
+      display: none;
+      font-size: .24rem;
+      color:rgba(254,52,57,1);
+      .surplus {
+        float: left;
+      }
+      .cancel {
+        float: left;
+        margin-left: .4rem;
+        color:rgba(170,170,170,1);
+        font-size: .16rem;
+      }
+    }
+  }
+  .test-wrapper {
+    position: relative;
+    padding: 1.8rem .3rem 0;
+    .topic-container {
+      h2 {
+        font-size: .28rem;
+        color:rgba(34,34,34,1);
+        line-height: .28rem;
+        text-align: left;
+      }
+      ol {
+        li {
+          position: relative;
+          margin-top: .3rem;
+          margin-bottom: .6rem;
+          margin-left: .45rem;
+          font-size: .26rem;
+          line-height: .4rem;
+          color: #666;
+          input[type='radio'] {
+            position: absolute;
+            left: -.45rem;
+            top: 0;
+            width: .3rem;
+            height: .3rem;
+            border: 1px solid #e1e1e1;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .modalAdvance {
+    .modal();
+  }
+  .modalBack {
+    .modal(.5rem .27rem .3rem);
+  }
+  .modalAuto {
+    .modal(.5rem .28rem .6rem);
+  }
+}
