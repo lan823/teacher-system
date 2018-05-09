@@ -47,7 +47,8 @@
 }
 .rules-wrap .rules {
   padding: .4rem .3rem 0;
-  background: url(../img/secret.png) no-repeat center center;
+  background: url(../img/secret.png) no-repeat -0.26rem center;
+  background-size: 100%;
 }
 .rules-wrap .rules .rulesWords .title {
   font-size: .3rem;
@@ -58,17 +59,18 @@
   margin-top: .2rem;
 }
 .rules-wrap .rules .rulesWords .detail-wrap .detail {
+  padding-left: .3rem;
   margin-top: .31rem;
   font-size: .28rem;
   color: #666666;
   line-height: .28rem;
-  background: url(../img/star.png) no-repeat left center;
+  background: url(../img/star.png) no-repeat 1px center;
   background-size: .19rem .19rem;
 }
 .rules-wrap .rules .rulesWords .detail-wrap .detail span {
   color: #ff5e00;
 }
-.rules-wrap .rules .startText .botton {
+.rules-wrap .rules .startText .button {
   margin-top: 7.75rem;
   width: 6.9rem;
   height: .9rem;

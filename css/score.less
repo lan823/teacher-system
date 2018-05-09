@@ -1,0 +1,95 @@
+@import "../common/css/common.less";
+.score-wrap {
+  // 流程
+  .procedure {
+    position: relative;
+    top:0;
+    left:0;
+    background:rgba(53,203,219,1);
+    .pro-num {
+      .display();
+      padding: .09rem .3rem .08rem .21rem;
+      .num {
+        width:.4rem;
+        height:.4rem; 
+        background:rgba(255,255,255,1);
+        border-radius: 100%;
+        font-size: .26rem;
+        color:rgba(53,203,219,1);
+        line-height:.4rem;
+        text-align: center;
+      }
+      .line {
+        margin-left: -.16rem ;
+        margin-right: -.16rem ;
+        width:1.5rem;
+        height:.02rem; 
+        background:rgba(255,255,255,1);
+        opacity:1; 
+      }  
+    }
+    .pro-words {
+      .display();
+      padding: .09rem .3rem .08rem .21rem;
+      .words {
+        font-size:.2rem;
+        color:rgba(255,255,255,1);
+        line-height:.28rem;
+      }
+
+    }
+  }
+  // 成绩
+  .score {
+    // padding: 0 .3rem;
+    .hintText {
+      padding: 1.7rem 2.53rem 0;
+      .hintText-t {
+        font-size: .6rem;
+        color:rgba(255,94,0,1);
+        line-height: .6rem;
+        text-align: center;
+      }
+      .hintText-b {
+        margin-top: .39rem;
+        font-size:.3rem;
+        color:rgba(102,102,102,1);
+        line-height:.3rem;
+        text-align: center;
+      }
+    }
+    // 成绩
+    .reportCard {
+      padding: .96rem 2.23rem 2.01rem;
+      .fraction {
+        font-size:.6rem;
+        color:rgba(255,94,0,1);
+        line-height:.6rem;
+        text-align: center;
+      }
+      .prompt {
+        margin-top: .93rem;
+        font-size:.3rem;
+        color:rgba(102,102,102,1);
+        line-height:.3rem;
+      }
+
+    }
+    // 按钮
+    .button {
+      margin: 0 .3rem;
+      width:6.9rem;
+      height:.9rem; 
+      background:rgba(53,203,219,1);
+      border-radius: 8px ; 
+      .buttonWrods {
+        font-size: .36rem;
+        color:rgba(255,255,255,1);
+        line-height: .9rem;
+        text-align: center;
+
+      }  
+    }
+  }
+
+}

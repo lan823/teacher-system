@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>考试要求jhgjhgjgjh</title>
+  <title>考试成绩</title>
   <script src="./common/js/jquery.js"></script>
   <script src="./common/js/rem.js"></script>
-  <script src="./js/examRules.js"></script>
+  <script src="./js/score.js"></script>
   <link rel="stylesheet" href="./common/css/reset.css">
-  <link rel="stylesheet" href="./css/examRules.css">
+  <link rel="stylesheet" href="./css/score.css">
   <script src="./common/js/common.js"></script>
 </head>
 <body>
   <!-- 外层 -->
-  <div class="rules-wrap">
+  <div class="score-wrap">
     <!-- 流程 -->
     <div class="procedure">
       <div class="pro-num">
@@ -33,23 +33,18 @@
         <div class="words">岗前考核</div>        
       </div>
     </div>
-    <!-- 规则 -->
-    <div class="rules">
-      <div class="rulesWords">
-        <p class="title"><strong>考试要求</strong></p>
-        <div class="detail-wrap" >
-          <p class="detail">本次考试为<span>20道</span>选择题， <span>90分</span>及格，共<span>2次考试机会</span></p>
-          <p class="detail">考试时间<span>20分钟</span></p>
-        </div>
-        
+    <!-- 成绩 -->
+    <div class="score">
+      <div class="hintText">
+        <p  class="hintText-t">在线笔试</p>
+        <p class="hintText-b">本次测试结果</p>
       </div>
-      <div class="startText">
-        <div class="button">开始测试</div>
-        <div class="prompt">
-            本次考试您有<span>2次</span> 测试机会
-        </div>
+      <div class="reportCard">
+        <p  class="fraction">90分</p>
+        <p class="prompt">恭喜您通过了在线笔试</p>
       </div>
-    </div>  
-  </div>
+      <div class="button"><p class="buttonWrods">下一步</p></div>
+    </div>
+  </div>   
 </body>
 </html>
