@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    // 构造函数+原型模式（prototype)
+    function person (name, age,gender){
+      this .name=name;
+      this.age=age;
+      this.gender=gender;
+    }
+    var p =new person("张学友","19","male");
+    var p1 =new person("刘策划","20","male");
+      person.prototype.sayhello=function (){
+      console.log ("你好，我是"+this. name);
+    }
+    p. sayhello ();
+    p1.sayhello ();
+
+
+    // 
+    // var parent= {
+    //   sayhello :function (){
+    //     console.log ("我想死你了");
+    //   }
+    // }
+    // for (var k in parent){
+    //   person.prototype[k]=parent[k];
+
+    // }
+    // var p = new person("冯弘","50")
+    // p .sayhello();
+    
+
+    // 安全扩展一个内置对象
+    function MyArray (){
+
+    }
+    var arr = new Array ();
+    MyArray.prototype=arr;
+    var myArr = new MyArray ();
+    myArr.push (1);
+    console.log(myArr);
+
+    // 原型链的基本结构
+    function person (name){
+      this.name=name;
+    }
+    var p =new person( "zhanglan");
+    person .prototype.say=function(){
+      console.log ("我是"+this.name);
+
+    };
+    p.say();
+    
+
+    // 继承
+    function jicheng(obj){
+      var o ={};
+      o._proto_ =obj;
+      return o;
+    }
+    var o = jicheng({name:"张三"});
+    console.log(o);
+    // 经典的继承语法
+    // object.create(obj)
+    // 存在兼容问题
+    // var o ={
+    //   name:"zhaosi"
+    // };
+    // var obj = object.create(o);
+    // console.log (obj.name);
+
+    // Function 构造函数，传多个参数，最后一个是函数体，前面参数是该函数的形参
+    // var sum = new Function("a","b","return a + b;");
+    // console.log(sum(2,3));
+
+    // 传入一个数组，求这个数组的最大值
+    var max = new Function(
+      "arr",
+      "var maxNum = arr[0];" +
+      "for (var i=1;i<arr.length;i++){"+
+      "if(maxNum < arr[i]){"+
+      "maxNum =arr[i];"+
+      "}"+
+      "}"+
+      "return maxNum;"
+    )
+    console.log(max([1, 52, 3, 4]));
+    // 函数内部有一个对象，argumrnts
+    // 当函数调用的时候，系统会将所有传入的实参，依次存入这个数组
+    function max(){
+      var maxNum = arguments[0];
+      for(var i =1;i<arguments.length;i++){
+        maxNum = maxNum > arguments[i] ? maxNum:arguments[i];
+      }
+      return maxNum; 
+    }
+    console.log(max([1, 52, 3, 4]));
+
+    // 闭包
+    // 有权访问另一个函数作用域内的变量的函数，叫闭包
+    function a (){
+      var n =0;
+      function  inc (){
+        n++;
+        console.log (n)
+      }
+      inc();
+      inc();
+    }
+    a();
+    // 匿名函数
+    // 语法：（function (){} ());
+    // 匿名函数的作用是避免全局变量的污染以及函数名的冲突
+    (function (a,b){
+      alert (a+b);
+      return (a+b);
+    })(3,4);
+
+    // this 指向
+    // 1.全局作用域或普通函数中的this 指向全局对象window
+    //   console.log (this);       // window    
+     
+    //   function bar (){
+    //     console.log ( this);
+    //   }
+    //   bar ();
+    // // 2.方法调用中，谁调用this指向谁
+    //   //对象方法调用
+    //   var person = {
+    //     run: function () {console.log(this)}
+    //   }
+    //   person.run() // person
+
+    //   //事件绑定
+    //   var btn = document.querySelector("button")
+    //     btn.onclick = function () {
+    //     console.log(this) // btn
+    //   }
+    //   //事件监听
+    //   var btn = document.querySelector("button")
+    //     btn.addEventListener('click', function () {
+    //     console.log(this) //btn
+    //   })
+
+    //   //jquery的ajax
+    //   $.ajax({
+    //     self: this,
+    //     type:"get",
+    //     url: url,
+    //     async:true,
+    //     success: function (res) {
+    //     console.log(this) // this指向传入$.ajxa()中的对象
+    //     console.log(self) // window
+    //     }
+    //   });
+    // 3、构造函数或者构造函数原型对象中this指向构造函数
+
+
+    // 递归
+    // 求1-100的和
+    function sum(n){
+      if (n==1) {
+        return 1;
+      }
+        return sum(n-1) + n;
+    }
+    console.log(sum(100));
+
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

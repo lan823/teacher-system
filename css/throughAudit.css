@@ -1,0 +1,94 @@
+/**
+ * 弹窗
+ * @param {*}
+ */
+.throughWrap .procedure {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #35cbdb;
+}
+.throughWrap .procedure .pro-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .09rem .3rem .08rem .21rem;
+}
+.throughWrap .procedure .pro-num .num {
+  width: .4rem;
+  height: .4rem;
+  background: #ffffff;
+  border-radius: 100%;
+  font-size: .26rem;
+  color: #35cbdb;
+  line-height: .4rem;
+  text-align: center;
+}
+.throughWrap .procedure .pro-num .line {
+  margin-left: -0.16rem;
+  margin-right: -0.16rem;
+  width: 1.5rem;
+  height: .02rem;
+  background: #ffffff;
+  opacity: 1;
+}
+.throughWrap .procedure .pro-words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .09rem .3rem .08rem .21rem;
+}
+.throughWrap .procedure .pro-words .words {
+  font-size: .2rem;
+  color: #ffffff;
+  line-height: .28rem;
+}
+.throughWrap .audit {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.8rem .57rem 0;
+}
+.throughWrap .audit .left {
+  width: 2.05rem;
+  height: 1.87rem;
+}
+.throughWrap .audit .left img {
+  width: 100%;
+}
+.throughWrap .audit .words {
+  position: absolute;
+  left: 1.99rem;
+}
+.throughWrap .audit .words p {
+  margin-top: .3rem;
+  font-size: .4rem;
+  color: #ff5e00;
+  line-height: .56rem;
+  text-align: center;
+}
+.throughWrap .audit .right {
+  width: 2.05rem;
+  height: 1.87rem;
+}
+.throughWrap .audit .right img {
+  width: 100%;
+}
+.throughWrap .button {
+  position: fixed;
+  left: .3rem;
+  bottom: 2.4rem;
+  width: 6.9rem;
+  height: .9rem;
+  background: #35cbdb;
+  border-radius: .08rem ;
+}
+.throughWrap .button p {
+  font-size: .36rem;
+  color: #ffffff;
+  line-height: .9rem;
+  text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>雅思托福考试</title>
+  <script src="./common/js/jquery.js"></script>
+  <script src="./common/js/rem.js"></script>
+  <script src="./js/toeflText.js"></script>
+  <link rel="stylesheet" href="./common/css/reset.css">
+  <link rel="stylesheet" href="./css/toeflText.css">
+  <script src="./common/js/common.js"></script>
+</head>
+<body>
+    <div class="toeflWrap">
+        <!-- 倒计时 -->
+        <div class="countDownWrapper">
+          <div class="countDown">
+            <div class="counter">
+              <div class="timer">
+                <p>倒计时</p>
+                <span></span>
+              </div>
+            </div>
+            <div class="submit">交卷</div>
+          </div>
+          <div class="counterTip">
+            <div class="surplus">
+              考试时间剩余
+              <span>5</span> 分钟，请注意安排时间
+            </div>
+            <div class="cancel">
+              <span>5</span>消失
+            </div>
+          </div>
+        </div>
+        <!-- 流程 -->
+        <div class="procedure">
+        <div class="pro-num">
+          <div class="num">1</div>
+          <div class="line"></div>
+          <div class="num">2</div>
+          <div class="line"></div>
+          <div class="num">3</div>
+          <div class="line"></div>
+          <div class="num">4</div>
+        </div>
+        <div class="pro-words">
+          <div class="words">在线笔试</div>
+          <div class="words">在线试讲</div>
+          <div class="words">设备申请</div>
+          <div class="words">岗前考核</div>        
+        </div>
+        </div>
+        <!-- 考试内容 -->
+        <div class="textContent">
+          <div class="require">
+            <p>Please choose one of the two statements below as your topic, and develop an argumentative essay. You should either defend or attack the statement you choose. Tips: There is no word limit, but there is a time limit (30 mins), so you should wisely spend your time. Select a topic that you know something about, either from your own experience or from that of others.</p>
+          </div>
+          <div class="subject">
+            <p >题目一：<span class="textOne">Dieting makes people fat.</span></p>
+            <p >题目二：<span  class="textTwo">Romantic love is a poor basis for marriage.</span></p>
+          </div>
+          <!-- <div class="inputText">
+            <textarea rows="10" cols="23">点击开始书写</textarea>
+          </div> -->
+          <textarea  class="inputText" rows="10" cols="23" >点击开始书写</textarea>
+        </div>
+        <!-- 弹窗 -->
+        <div class="modalAdvance">
+          <!-- 提前交卷 -->
+          <div class="advance">
+            <div class="modalTop">
+              测试时间还没结束,确定提前交卷
+            </div>
+            <ul class="modalBottom">
+              <li class='cancel'>取消</li>
+              <li class='confirm'>确认</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modalBack">
+          <!-- 退出考试系统 -->
+          <div class="advance">
+            <div class="modalTop">
+              退出考试后，系统将自动帮您交卷 
+            </div>
+            <ul class="modalBottom">
+              <li class='cancel'>取消</li>
+              <li class='confirm'>确认</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modalAuto">
+          <!-- 自动交卷 -->
+          <div class="advance">
+            <div class="modalTop">
+              退出考试后，系统将自动帮您交卷 
+            </div>
+            <!-- <ul class="modalBottom">
+              查看测试结果
+            </ul> -->
+          </div>
+        </div>
+      </div>
+  
+</body>
+</html>

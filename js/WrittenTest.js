@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // TODO: 声明变量的时候，为了避免全局变量的污染，最好用闭包
-  var timerDate; // 后台取时间戳
+  var timerDate=305; // 后台取时间戳
   var surplusTime = 300; // 剩余5分钟
   var disappearTime = 295; //消失时间
   var disappearDater = 5; // 显示时间
@@ -182,4 +182,5 @@ $(document).ready(function () {
     $('.modalBack').fadeOut();
     alert('退出考试系统')
   });
+ 
 })

@@ -1,0 +1,233 @@
+/**
+ * 弹窗
+ * @param {*}
+ */
+.toeflWrap .countDownWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 1.6rem;
+  width: 8rem;
+}
+.toeflWrap .countDownWrapper .countDown {
+  height: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0  1.6rem 0 1.11rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.toeflWrap .countDownWrapper .countDown .counter .timer {
+  overflow: hidden;
+  color: #fff;
+  font-size: .34rem;
+}
+.toeflWrap .countDownWrapper .countDown .counter .timer p {
+  float: left;
+  padding-top: .03rem;
+}
+.toeflWrap .countDownWrapper .countDown .counter .timer span {
+  float: left;
+  margin-left: .22rem;
+  font-size: .4rem;
+  color: #ff5e00;
+}
+.toeflWrap .countDownWrapper .countDown .submit {
+  width: 1rem;
+  height: .5rem;
+  background: #ffffff;
+  border-radius: .08rem ;
+  line-height: .5rem;
+  text-align: center;
+  color: #35cbdb;
+  font-size: .28rem;
+}
+.toeflWrap .countDownWrapper .counterTip {
+  padding: .14rem .65rem .14rem 1.72rem;
+  overflow: hidden;
+  background: #ffefef;
+  display: none;
+  font-size: .24rem;
+  color: #fe3439;
+}
+.toeflWrap .countDownWrapper .counterTip .surplus {
+  float: left;
+}
+.toeflWrap .countDownWrapper .counterTip .cancel {
+  float: left;
+  margin-left: .4rem;
+  color: #aaaaaa;
+  font-size: .16rem;
+}
+.toeflWrap .procedure {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #35cbdb;
+}
+.toeflWrap .procedure .pro-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .09rem .3rem .08rem .21rem;
+}
+.toeflWrap .procedure .pro-num .num {
+  width: .4rem;
+  height: .4rem;
+  background: #ffffff;
+  border-radius: 100%;
+  font-size: .26rem;
+  color: #35cbdb;
+  line-height: .4rem;
+  text-align: center;
+}
+.toeflWrap .procedure .pro-num .line {
+  margin-left: -0.16rem;
+  margin-right: -0.16rem;
+  width: 1.5rem;
+  height: .02rem;
+  background: #ffffff;
+  opacity: 1;
+}
+.toeflWrap .procedure .pro-words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .09rem .3rem .08rem .21rem;
+}
+.toeflWrap .procedure .pro-words .words {
+  font-size: .2rem;
+  color: #ffffff;
+  line-height: .28rem;
+}
+.toeflWrap .textContent {
+  padding: .22rem .3rem  0;
+  width: 6.9rem;
+}
+.toeflWrap .textContent .require p {
+  font-size: .28rem;
+  color: #666666;
+  line-height: .48rem;
+}
+.toeflWrap .textContent .subject p {
+  margin-top: .3rem;
+  font-size: .28rem;
+  color: #222222;
+  line-height: .3rem;
+}
+.toeflWrap .textContent .inputText {
+  margin-top: .54rem;
+  width: 6.9rem;
+  height: 4.66rem;
+  font-size: .28rem;
+  color: #aaaaaa;
+  background: #f7f7f7;
+  line-height: .4rem;
+}
+.toeflWrap .modalAdvance {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 5.2rem 0;
+}
+.toeflWrap .modalAdvance .advance {
+  width: 5.4rem;
+  margin: 0 auto;
+  border-radius: .24rem;
+  background: #ffffff;
+}
+.toeflWrap .modalAdvance .advance .modalTop {
+  padding: 0.5rem 1.24rem 0.3rem;
+  border-bottom: 1px solid #ececec;
+  font-size: .32rem;
+  color: #666666;
+  line-height: .5rem;
+  text-align: center;
+}
+.toeflWrap .modalAdvance .advance .modalBottom {
+  padding: .32rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .36rem;
+  color: #35cbdb;
+}
+.toeflWrap .modalBack {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 5.2rem 0;
+}
+.toeflWrap .modalBack .advance {
+  width: 5.4rem;
+  margin: 0 auto;
+  border-radius: .24rem;
+  background: #ffffff;
+}
+.toeflWrap .modalBack .advance .modalTop {
+  padding: 0.5rem 0.27rem 0.3rem;
+  border-bottom: 1px solid #ececec;
+  font-size: .32rem;
+  color: #666666;
+  line-height: .5rem;
+  text-align: center;
+}
+.toeflWrap .modalBack .advance .modalBottom {
+  padding: .32rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .36rem;
+  color: #35cbdb;
+}
+.toeflWrap .modalAuto {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  padding: 5.2rem 0;
+}
+.toeflWrap .modalAuto .advance {
+  width: 5.4rem;
+  margin: 0 auto;
+  border-radius: .24rem;
+  background: #ffffff;
+}
+.toeflWrap .modalAuto .advance .modalTop {
+  padding: 0.5rem 0.28rem 0.6rem;
+  border-bottom: 1px solid #ececec;
+  font-size: .32rem;
+  color: #666666;
+  line-height: .5rem;
+  text-align: center;
+}
+.toeflWrap .modalAuto .advance .modalBottom {
+  padding: .32rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: .36rem;
+  color: #35cbdb;
+}

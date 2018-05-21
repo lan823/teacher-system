@@ -1,5 +1,5 @@
 @import "../common/css/common.less";
-.notThrough-wrap {
+.throughWrap {
   // 流程
   .procedure {
     position: relative;
@@ -40,61 +40,52 @@
     }
   }
   // 内容
-  .content-wrap {
-    .content-top {
-      padding: 1.05rem 1.72rem .5rem;
-      .content-img {
-        margin: 0  1.33rem;
-        width: 1.4rem;
-        height: 1.4rem; 
-        border-radius: .2rem ; 
-        text-align: center;
-        img {
-          width:100%;
-          height:100%; 
-          
-        }
+  .audit {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.8rem .57rem 0;
+    // 图片
+    .left {
+      width: 2.05rem;
+      height: 1.87rem;
+      img {
+        width: 100%;
       }
-      .content-reason {
-        margin-top: .4rem;
-        width:4.05rem;
-        height:1.12rem; 
+    }
+    .words { 
+      position: absolute;
+      left:1.99rem;
+      p {
+        margin-top: .3rem;
         font-size:.4rem;
-        color:rgba(34,34,34,1);
+        color:rgba(255,94,0,1);
         line-height:.56rem;
         text-align: center;
-
       }
     }
-    .content-cen {
-      padding: 0 1.44rem;
-      width:3.04rem;
-      height:.3rem; 
-      font-size:.3rem;
-      color:rgba(102,102,102,1);
-      line-height:.3rem;
+    .right {
+      width: 2.05rem;
+      height: 1.87rem;
+      img {
+        width: 100%;
+      }
+    } 
+  } 
+  .button {
+    position: fixed;
+    left:.3rem;
+    bottom: 2.4rem;
+    width:6.9rem;
+    height:.9rem; 
+    background:rgba(53,203,219,1);
+    border-radius: .08rem ; 
+    p {
+      font-size:.36rem;
+      color:rgba(255,255,255,1);
+      line-height:.9rem;
       text-align: center;
-      p {
-        width: 4.62rem;
-        margin-top: .24rem;
-      }
     }
-    .content-bot {
-      position: fixed;
-      left:1.32rem;
-      bottom: .9rem;
-      width:4.9rem;
-      height:.96rem; 
-      font-size:.24rem;
-      color:rgba(170,170,170,1);
-      line-height:.48rem;
-      text-align: center;
-      a {
-        color:rgba(48, 196, 215, 0.667);
-
-
-      }
-    }
-  }
-
+  }   
 }
